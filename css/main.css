@@ -1,0 +1,113 @@
+/* 
+body background: rgb(205, 117, 10);
+login page box-shadow: 0 0 20px rgb(0, 0, 0, 0.2), 
+        0 5px 5px 0 rgb(0, 0, 0, 0.24) ;
+login page background: #ffff;
+input box background: #f2f2f2;
+
+button background: rgb(205, 89, 7);
+message color #b3b3b3;
+message a tag color #ef7036;
+
+ */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    color: #000;
+}
+body{
+    height: 100%;
+    background: #000;
+    background-image: url("../images/cowPattern.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%; 
+}
+
+#admin{
+    height: 100%;
+    background: #000;
+}
+
+.Maintitle {
+    text-align: center;
+    margin-top: 150px;
+
+}
+
+.Maintitle h1 {
+    color: #fff; /* Set your desired shade of blue */
+    font-family: 'Arial', sans-serif; /* Choose a suitable font family */
+    font-size: 100px; /* Adjust the font size as needed */
+    text-shadow: 3px 0 0 #000, 0 -3px 0 #000, 0 3px 0 #000, -3px 0 0 #000;
+     box-shadow: 0 0 20px rgb(0, 0, 0, 0.2), 0 5px 5px 0 rgb(0, 0, 0, 0.24) ;
+}
+
+.login-page{
+    width: 350px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 40px;
+    box-shadow: 0 0 20px rgb(0, 0, 0, 0.2), 
+    0 5px 5px 0 rgb(0, 0, 0, 0.24) ;
+    background: #ffff;
+}
+
+.login-page h2{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.input-box{
+    margin-bottom: 10px;
+}
+
+.input-box input{
+    width: 100%;
+    font-size: 16px;
+    padding: 15px;
+    border: 0;
+    background: #f2f2f2;
+    outline: none;
+}
+
+.login-page button{
+    width: 100%;
+    font-size: 16px;
+    padding: 15px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    background: #000;
+    border: 0;
+    color: #ffff;
+    text-transform: uppercase;
+    transition: all ease .5s;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.login-page button:hover{
+    background: #b3b3b3;
+}
+
+.login-page p{
+    color: #b3b3b3;
+    font-size: 12px;
+}
+
+.login-page p a{
+    text-decoration: none;
+    color: #000;
+}
+
+.registration-form{
+    display: none;
+}
+
+.displayMessage{
+    margin-top: 10px;
+}
