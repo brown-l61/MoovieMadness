@@ -13,6 +13,9 @@ CUR = "https://prod-23.northeurope.logic.azure.com/workflows/954063f9176d46d782a
 //Handlers for button clicks
 $(document).ready(function() {
 
+	var authUserName;
+	var authUserRole;
+
 	//Handler for the registration button
 	$("#registerSubmit").click(function(e) {
 		e.preventDefault();
@@ -102,10 +105,22 @@ $(document).ready(function() {
 
 							var userRole = responseCUR.ResultSets.Table1[0].userRole;
 
+							authUserName = requestData.userName;
+							authUserRole = userRole;
+
+
 							if (userRole === 'adminUser') {
 
+								sessionStorage.setItem('userName', authUserName);
+								sessionStorage.setItem('userRole', authUserRole);
+
 								window.location.href = 'adminMain.html';
+
 							} else {
+
+								sessionStorage.setItem('userName', authUserName);
+								sessionStorage.setItem('userRole', authUserRole);
+
 								window.location.href = 'generalMain.html';
 							}
 						}
