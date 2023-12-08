@@ -23,7 +23,7 @@ $(document).ready(function() {
       attemptLogin();
    });
 
-}); //end of document.ready
+//}); //end of document.ready
 
 
 //A function to submit a new asset to the REST endpoint //
@@ -104,3 +104,4 @@ function attemptLogin() {
       }
    });
 }
+}); //end of document.ready
