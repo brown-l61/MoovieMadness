@@ -12,13 +12,15 @@ CLU = "https://prod-33.northeurope.logic.azure.com/workflows/03405edc249b4f49a9e
 $(document).ready(function() {
 
    //Handler for the registration button
-   $("#registerSubmit").click(function() {
+   $("#registerSubmit").click(function(e) {
+      e.preventDefault();
       //Execute the submit new asset function
       submitNewUser();
    });
 
    //Handler for the login button
-   $("#loginSubmit").click(function() {
+   $("#loginSubmit").click(function(e) {
+      e.preventDefault();
       //Execute the userlogin
       attemptLogin();
    });
