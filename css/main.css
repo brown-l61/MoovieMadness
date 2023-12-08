@@ -38,7 +38,7 @@ body{
 }
 
 .Maintitle h1 {
-    color: #fff; /* Set your desired shade of blue */
+    color: #5d98fc; /* Set your desired shade of blue */
     font-family: 'Arial', sans-serif; /* Choose a suitable font family */
     font-size: 100px; /* Adjust the font size as needed */
     text-shadow: 3px 0 0 #000, 0 -3px 0 #000, 0 3px 0 #000, -3px 0 0 #000;
