@@ -9,8 +9,7 @@ CLU = "https://prod-33.northeurope.logic.azure.com/workflows/03405edc249b4f49a9e
 
 
 //Handlers for button clicks
-//$(document).ready(function() {
-
+$(document).ready(function() {
 
    //Handler for the registration button
    $("#registerSubmit").click(function() {
@@ -24,7 +23,7 @@ CLU = "https://prod-33.northeurope.logic.azure.com/workflows/03405edc249b4f49a9e
       attemptLogin();
    });
 
-//}); //end of document.ready
+}); //end of document.ready
 
 
 //A function to submit a new asset to the REST endpoint //
