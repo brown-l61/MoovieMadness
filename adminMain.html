@@ -5,17 +5,116 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-    <link rel="stylesheet" href="css/main.css">
+    <!-- <link rel="stylesheet" href="css/main.css">-->
     <script type="text/javascript" src="js/app.js"></script>
     <script src="js/main.js"></script>
     <!-- Add your SVG icon for the tab -->
-    <link rel="icon" href="../images/cowIcon.png" type="image/svg+xml">
-    <title>Welcome to MOOvie Madness</title>
+    <link rel="icon" href="../MoovieMadness-main/images/cowPattern.PNG" type="image/svg+xml">
+    <title>MOOvie Madness- Admin</title>
   </head>
   <body id="admin">
     <div class="Maintitle">
       <h1 id="userName"> Welcome to Moovie Maddness!!!</h1>
-      <h1>ADMIN USER</h1>
+            <h1>ADMIN USER</h1>
+        <div  class="container">
+
+        <!--Header-->
+        <div class="row align-items-start">
+            <div class="col-2"  ></div>
+
+            <div class="col-8" style="text-align: center;">
+              <h3>MOOvie Madness (Upload Movies Here...)</h3>
+            </div>
+
+            <div class="col-2"  ></div>
+        </div>
+
+        <!--New Asset Box-->
+        <div class="row align-items-start">
+            <div class="col-2"  ></div>
+
+            <div class="col-8" style="text-align: left;border-bottom:1px solid #222222;">
+              <p>Add Movie</p>
+                
+                <form style="font-size: 10pt;" id="newAssetForm">
+            
+                <div class="mb-3">
+                  <label for="movieTitle" class="form-label">Movie Name</label>
+                  <input type="text" class="form-control" id="movieTitle">
+                </div>
+
+                <div class="mb-3">
+                  <label for="movieGenre" class="form-label">Movie Genre</label>
+                  <input type="string" class="form-control" id="movieGenre">
+                </div>
+
+                <div class="mb-3">
+                  <label for="movieCertification" class="form-label">Movie Certification</label>
+                  <input type="text" class="form-control" id="movieCertification">
+                </div>
+                  
+                <div class="mb-3">
+                  <label for="movieLength" class="form-label">Movie Length</label>
+                  <input type="text" class="form-control" id="movieLength">
+                </div>
+                  
+                  <div class="mb-3">
+                  <label for="movieComments" class="form-label">Comments/Reviews</label>
+                  <input type="text" class="form-control" id="movieComments">
+                </div>
+
+                <div class="mb-3">
+                  <label for="UpFile" class="form-label">File to Upload</label>
+                  <input type="file" class="form-control" id="UpFile">
+                </div>
+            
+                <button type="button" id="subNewForm" class="btn btn-primary">Submit</button> <br/><br/>
+                   
+                </form></div>
+                
+            <div id="successMessage" class="displayMessage"> </div>
+            <div id="errorMessage" class="displayMessage"> </div>
+                
+               
+            
+            <!-- View Movies and Append Delete Button FOR ADMIN ONLY-->
+
+            <div class="col-2"  ></div>
+        </div>
+        
+          <!--Header-->
+        <div class="row align-items-start">
+            <div class="col-2"  ></div>
+
+            <div class="col-8" style="text-align: center;">
+              <h3>View Movie Database</h3>
+            </div>
+
+            <!-- view Movie Area-->
+        <div class="row align-items-start">
+            <div class="col-2"  ></div>
+
+            <div class="col-8" style="text-align: left;" >
+              <div style="padding:5px;">
+                <button  id="getAllMovies" type="button" class="btn btn-primary">View Movies</button>
+              </div>
+
+              <div id="movieList">
+
+                <h4>Please click the 'View Movies' button if you wish to view the movies currently on Moovie Madness DB.</h4>
+
+              </div>
+            </div>
+
+            <div class="col-2"  ></div>
+        </div>
+
+    </div>
+
+    </div>
+        
+        
+  
     </div>
   </body>
 </html>

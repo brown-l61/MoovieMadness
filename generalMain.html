@@ -1,21 +1,53 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en" ng-app="Dashboard">
   <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MOOvie Madness- User</title>
+
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-    <link rel="stylesheet" href="css/main.css">
+    <!-- <link rel="stylesheet" href="css/main.css">-->
     <script type="text/javascript" src="js/app.js"></script>
     <script src="js/main.js"></script>
     <!-- Add your SVG icon for the tab -->
-    <link rel="icon" href="../images/cowIcon.png" type="image/svg+xml">
-    <title>Welcome to MOOvie Madness</title>
+<link rel="icon" href="../MoovieMadness-main/images/cowPattern.PNG" type="image/svg+xml">
+
   </head>
-  <body id="general">
-    <div class="Maintitle">
-      <h1 id="userName"> Welcome to Moovie Maddness!!!</h1>
-      <h1>GENERAL USER</h1>
+  
+  <body>
+
+    <div  class="container">
+
+        <!--Header-->
+        <div class="row align-items-start">
+            <div class="col-2"  ></div>
+
+            <div class="col-8" style="text-align: center;">
+              <h3>Pick your Movie</h3>
+            </div>
+
+            <!-- view Asset Area-->
+        <div class="row align-items-start">
+            <div class="col-2"  ></div>
+
+            <div class="col-8" style="text-align: left;" >
+              <div style="padding:5px;">
+                <button id ="getUserMovies" type="button" class="btn btn-primary">View Images</button>
+              </div>
+
+              <div id="userMovieList">
+
+                <h4>Please click the view Images button if you wish to view images on the system.</h4>
+
+              </div>
+            </div>
+
+            <div class="col-2"  ></div>
+        </div>
+
     </div>
+    </div>
+  
   </body>
 </html>
